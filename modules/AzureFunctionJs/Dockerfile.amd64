@@ -1,0 +1,4 @@
+FROM mcr.microsoft.com/azure-functions/node:2.0-iot-edge
+ENV AzureWebJobsScriptRoot=/app
+ENV AzureFunctionsJobHost__Logging__Console__IsEnabled=true
+COPY . /app
